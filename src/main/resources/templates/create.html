@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Work  Create Page</h1>
+
+<form action="#" th:action="@{create}" th:object="${work}" method="POST">
+
+    <p> Name: <input type="text" th:field="*{name}"/></p>
+    <p> Surname: <input type="text" th:field="*{surname}"/></p>
+    <p> Salary: <input type="text" th:field="*{salary}"/></p>
+    <p>
+        <input type="submit" value="Create"/>
+        <input type="submit" value="Reset">
+    </p>
+
+
+</form>
+
+</body>
+</html>

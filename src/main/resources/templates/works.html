@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Works Page</title>
+</head>
+<body>
+
+<h1>Wellcome</h1>
+
+<table>
+
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Salary</th>
+    </tr>
+
+    <tr th:each="work : ${works}">
+        <td th:text="${work.id}"></td>
+        <td th:text="${work.name}"></td>
+        <td th:text="${work.surname}"></td>
+        <td th:text="${work.salary}"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
